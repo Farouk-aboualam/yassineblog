@@ -1,0 +1,13 @@
+<!-- blog/templates/blog/view_blogs.html -->
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h2>All Blogs</h2>
+    {% for blog in blogs %}
+        <div>
+            <h3>{{ blog.title }}</h3>
+            <p>{{ blog.content }}</p>
+        </div>
+        <hr>
+    {% endfor %}
+{% endblock %}
